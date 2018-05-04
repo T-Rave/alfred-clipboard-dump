@@ -30,8 +30,12 @@ _Interested_ in only dumping the clipboard history? [Use this gist for command l
 	* Copy results: using `y` will place the output of `clipdump.txt` into your clipboard as a single item. WARNING: copying full history into clipboard may lead to issues
 
 ### Alfred Workflow ###
-* Download `clipdump.alfredworkflow`
+* Download `clipdump-workflow.sh`
 * Launch Alfred Prefrenences (`Command` + `,` will launch it from Alfreds popup box)
 * Navigate to Workflows tab
-* Drag & drop `clipdump.alfredworkflow` to the window which will import it
-* Use: the Workflow works off of keyword by default. Type `clipdump` followed by a number to indicate how many lines to output. For full clipboard history, use `clipdump export`. WARNING: using `clipdump export` copyies full history into clipboard which may lead to issues
+* Create a new Workflow and name it appropriately
+* With the new Workflow highlighted, right click in the editor > Input > Keyword
+	* Choose a Keyword, such as `clipdump`, check `with space` option and `Argument Required`. Save
+*  Right click > Actions > Run Script and use the `/bin/bash` language
+* Paste the `clipdump-workflow.sh` script into the block. Save
+* Use: the Workflow works off of keyword by default. Type `KEYWORD`, keyword being the one you configured, followed by a number to indicate how many lines to output. For full clipboard history, use `KEYWORD export`. WARNING: using `KEYWORD export` copyies full history into clipboard which may lead to issues
