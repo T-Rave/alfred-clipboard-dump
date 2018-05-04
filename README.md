@@ -28,3 +28,10 @@ _Interested_ in only dumping the clipboard history? [Use this gist for command l
 	* Results: Pressing `enter` will result in the whole clipboard history. This will result in larger file size. Inputing a number will export that many lines
 	* Clear previous file: `y` will clear `clipdump.txt` if the file exists. `n` will append the new data to the end of `clipdump.txt`
 	* Copy results: using `y` will place the output of `clipdump.txt` into your clipboard as a single item. WARNING: copying full history into clipboard may lead to issues
+
+### Alfred Workflow ###
+* Download `clipdump.alfredworkflow`
+* Launch Alfred Prefrenences (`Command` + `,` will launch it from Alfreds popup box)
+* Navigate to Workflows tab
+* Drag & drop `clipdump.alfredworkflow` to the window which will import it
+* Use: the Workflow works off of keyword by default. Type `clipdump` followed by a number to indicate how many lines to output. For full clipboard history, use `clipdump export`. WARNING: using `clipdump export` copyies full history into clipboard which may lead to issues
