@@ -1,5 +1,5 @@
 # Alfred Clipboard History Dump #
-## a way to export all or portions of your working clipboard ##
+### a way to export all or portions of your working clipboard ###
 
 ### Description ###
 Alfred is a productivity application for Mac OS X that has many tools and features to improve your workflow; however, they do not easily allow the export of clipboard history (if you're using the feature).
