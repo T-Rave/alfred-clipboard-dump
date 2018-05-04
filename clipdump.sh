@@ -8,7 +8,7 @@ if [[ -z "$limit" ]]
 then
 	result=""
 else
-	result="LIMIT $limit"
+	result="ORDER BY item DESC LIMIT $limit"
 fi
 
 if [ "$clearfile" == "y" ] 
